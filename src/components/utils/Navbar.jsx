@@ -6,6 +6,16 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 	const navigate = useNavigate();
+
+	// --- ligne ajoutée : récupère l'utilisateur connecté depuis le localStorage
+	const user = JSON.parse(localStorage.getItem('user')); // [AJOUTÉ]
+
+	// --- ligne ajoutée : fonction de déconnexion
+	const handleLogout = () => { // [AJOUTÉ]
+		localStorage.removeItem('user'); // [AJOUTÉ]
+		navigate('/auth/login'); // [AJOUTÉ]
+	}; // [AJOUTÉ]
+
 	return (
 		<nav className="navbar">
 			<div className="navbar-left">
@@ -16,9 +26,19 @@ const Navbar = () => {
 				<div className="navbar-link">
 					<p onClick={() => navigate("/Planification")}>Planifier un trajet</p>
 				</div>
-				<div href="/profil" className="navbar-link">
-					<FaUserCircle className="profile-icon" onClick={() => navigate("/auth/login")} />
+				<div className="navbar-link">
+					<FaUserCircle
+						className="profile-icon"
+						onClick={() => navigate("/auth/login")}
+					/>
 				</div>
+
+				{/* --- bouton provisoire de déconnexion (visible seulement si utilisateur connecté) */}
+				{user && ( // [AJOUTÉ]
+					<div className="navbar-link"> {/* [AJOUTÉ] */}
+						<p onClick={handleLogout}>Déconnexion</p> {/* [AJOUTÉ] */}
+					</div> // [AJOUTÉ]
+				)} 
 			</div>
 		</nav>
 	);

@@ -61,6 +61,7 @@ p {
 		color: black;
 		height: 6rem;
 		width: 30rem;
+		border-radius: 5px;
 		border: 1px solid black;
 	}
 	button{
@@ -70,6 +71,7 @@ p {
 		font-family:'Afacad', sans-serif; ;
 		border: 2px solid black;
 		color:#FFFFFF;
+		border-radius: 5px;
 		font-size: 20px;
 	}
 }
@@ -85,7 +87,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 0px;
+	gap: 25px;
 	flex-basis: 33%;
 }
 
