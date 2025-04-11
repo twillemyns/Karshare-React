@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
+* {
+	font-family: 'Afacad', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body, #root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header, footer {
+	height: 60px;
+	flex-shrink: 0;
+}
+
+.login-content {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	background-color: #ffffff;
+}
+
+.wraps {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+}
+
+.title h1 {
+	font-size: 30px;
+	margin-bottom: 30px;
+	color: #000;
+}
+
+.log {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	max-width: 300px;
+}
+
+.log input {
+	padding: 12px;
+	border: none;
+	background-color: #eaeaea;
+	border-radius: 5px;
+	font-size: 23px;
+}
+
+.log button {
+	padding: 12px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 23px;
+}
+
+.log p {
+	font-size: 19px;
+	font-weight: 500;
+	color: #333;
+	margin-top: 20px;
+}
+
+.img {
+	width: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.regis {
+	cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.login-content {
+		flex-direction: column;
+		padding: 20px;
+		gap: 30px;
+	}
+
+	.wrap,
+	.img {
+		width: 100%;
+		text-align: center;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+}

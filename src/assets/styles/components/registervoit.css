@@ -1,0 +1,27 @@
+.allvoit {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	align-items: center;
+}
+.contvoit {
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.inputvoit {
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.next-btnvoit {
+	align-items: center;
+	display: flex;
+	border-radius: 5px;
+	background-color: #007DFE;
+	color: white;
+	height: 40px;
+	width: 256px;
+	border: 1px solid black;
+}

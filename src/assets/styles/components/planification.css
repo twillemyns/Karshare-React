@@ -1,0 +1,59 @@
+.maps{
+	height: 50%;
+	width: 50%;
+}
+
+.appli{
+	width: calc(60rem + 3vw);
+	height: auto;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.publi{
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	input{
+		font-style: 'Afacad', sans-serif;
+		font-size: 20px;
+		color: black;
+		height: 6rem;
+		width: 30rem;
+		border: 1px solid black;
+	}
+	button{
+		height: 6rem;
+		width: 30rem;
+		background-color:#007DFE;
+		font-family:'Afacad', sans-serif; ;
+		border: 2px solid black;
+		color:#FFFFFF;
+		font-size: 20px;
+	}
+
+
+}
+.container{
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container_responsive{
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1080px) {
+		flex-direction: column;
+	}
+}
+
+.container, .illustration{
+	flex-basis: 50%;
+}

@@ -1,0 +1,17 @@
+.tout{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.btn{
+	display: flex;
+	flex-direction: column;
+	width: 256px;
+	height: 150px;
+}
+
+
+			

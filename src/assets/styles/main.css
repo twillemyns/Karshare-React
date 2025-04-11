@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Afacad", sans-serif;
+
+	margin: 0;
+	padding: 0;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-optical-sizing: auto;
+	line-height: 1.6;
+	letter-spacing: -0.1rem;
+	font-weight: 400;
+	word-spacing: 0.35rem;
+	tab-size: 4;
+	-webkit-font-smoothing: an	tialiased;
+	text-rendering: optimizeLegibility;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+
+}
+
+.all{
+	margin-top: 8rem;
+	margin-bottom: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	input{
+		font-style: 'Afacad', sans-serif;
+		font-size: 20px;
+		color: black;
+		height: 6rem;
+		width: 30rem;
+		border: 1px solid black;
+	}
+	button{
+		height: 6rem;
+		width: 30rem;
+		background-color:#007DFE;
+		font-family:'Afacad', sans-serif; ;
+		border: 2px solid black;
+		color:#FFFFFF;
+		font-size: 20px;
+	}
+}
+
+.margin_page{
+	margin-inline: 7rem;
+}
+.register-title{
+	font-size: 4rem;
+}
+
+.form_group{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px;
+	flex-basis: 33%;
+}
+
+
+.wrap{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 33%;
+}
+
+.titre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 33%;
+}
+
+.para{
+	display: flex;
+	justify-content: center;
+	flex-basis: 33%;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.input-group input {
+	padding: 0.5em;
+	border-radius: 0.375em;
+	border: 1px solid #ccc;
+	font-size: 0.8125em;
+}
+
+
+.container-between{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 2rem;
+	margin-inline: 7rem;
+}
+
+.ville{
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+	border: 1px solid black;
+}
+
+.icon{
+	/* width: 50px; */
+	height: 50px;
+
+}
+
+.element{
+	flex-basis: 33%;
+}
+
+.icons{
+	justify-content: center;
+	display: flex;
+	flex-basis: 33%;
+}
+.input{
+	display: flex;
+	flex-direction: column;
+}
+.container_column{
+	display: flex;
+	flex-direction: column;
+}
+.column{
+	flex-direction: column;
+}
+.flex{
+	display: flex;
+}
+.gap2{
+	gap:2rem;
+}
+.container_content{
+	display: flex;
+	justify-content: space-between;
+}
+.between{
+	justify-content: space-between;
+}
