@@ -1,0 +1,89 @@
+.alls {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .container {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+  }
+  
+  .Photo img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #00aaff;
+  }
+  
+  .Prenom h2 {
+	margin: 0;
+	font-size: 1.5rem;
+  }
+  
+  .age,
+  .info p {
+	color: #555;
+	margin: 4px 0;
+  }
+  
+  .section {
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	border-top: 1px solid #eee;
+  }
+  
+  .section h3 {
+	font-size: 1.1rem;
+	color: #007BBA;
+	margin-bottom: 0.5rem;
+  }
+  
+  .badge-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 1rem;
+  }
+  
+  .badge {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #333;
+  }
+  
+  .badge::before {
+	content: "✔️";
+	color: #00bb77;
+	font-size: 1rem;
+  }
+  
+  .car {
+	margin-top: 1rem;
+  }
+  
+  .car img {
+	width: 100%;
+	max-width: 250px;
+	border-radius: 10px;
+	margin-bottom: 0.5rem;
+  }
+  
+  .description {
+	background-color: #f7f9fb;
+	padding: 1rem;
+	border-radius: 10px;
+	margin-top: 1rem;
+	font-style: italic;
+	color: #333;
+  }
+
+  

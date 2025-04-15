@@ -27,15 +27,18 @@
 		height: 6rem;
 		width: 30rem;
 		border: 1px solid black;
+		gap: 10px;
 	}
 	button{
+		cursor: pointer;
 		height: 6rem;
 		width: 30rem;
 		background-color:#007DFE;
 		font-family:'Afacad', sans-serif; ;
-		border: 2px solid black;
+		border: 1px solid black;
 		color:#FFFFFF;
 		font-size: 20px;
+		
 	}
 
 

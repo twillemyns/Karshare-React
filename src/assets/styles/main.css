@@ -171,6 +171,10 @@ p {
 .gap2{
 	gap:2rem;
 }
+
+.gap1{
+	gap:10px;
+}
 .container_content{
 	display: flex;
 	justify-content: space-between;

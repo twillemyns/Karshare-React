@@ -12,6 +12,7 @@ import Planification from './pages/other/Planification'
 import Voiture from './pages/auth/Registervoit'
 import Permis from './pages/auth/Permis'
 import Profil from './pages/other/Profil'
+import Trajets from './pages/other/trajets'
 
 const Root = () => {
 	return (
@@ -27,6 +28,7 @@ const Root = () => {
 					<Route path="/auth/Permis" element={<Permis/>}/>
 					<Route path="/auth/Voiture" element={<Voiture/>}/>
 					<Route path="/Profil" element={<Profil/>}/>
+					<Route path="/Trajets" element={<Trajets/>}/>
 
 				</Routes>
 			<Footer />

@@ -3,7 +3,9 @@ import '../../assets/styles/pages/home/home.css';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+	const navigate = useNavigate();
 	return (
+		
 		<>
 			<main className="all">
 				<div className="container-between">
@@ -28,7 +30,9 @@ const Home = () => {
 						<input type="date" />
 					</div>
 					<div className="form_element">
-						<button>Rechercher</button>
+						<button className="next-btnvoit"
+						onClick={() => navigate("/Trajets")}
+						type="submit">Rechercher</button>
 					</div>
 				</form>
 				<div className="container-between">

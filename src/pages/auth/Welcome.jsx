@@ -10,6 +10,8 @@ const Welcome = () => {
   };
 
   return (
+
+	
     <div className="welcome-container">
       <p className="register-title">
         Merci pour votre inscription ! L'aventure du covoiturage commence maintenant.
