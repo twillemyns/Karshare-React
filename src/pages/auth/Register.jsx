@@ -20,13 +20,13 @@ const Register = () => {
 	};
 
 	const handleRegister = () => {
-		// Vérifie si tous les champs sont remplis
+	
 		if (!username || !nom || !prenom || !birthDate || !email || !password) {
 			setErrorMessage("Veuillez remplir tous les champs.");
 			return;
 		}
 
-		// Vérifie la validité du mot de passe
+
 		if (!isPasswordValid(password)) {
 			setErrorMessage("Le mot de passe doit contenir au moins 8 caractères, une majuscule, un chiffre et un caractère spécial.");
 			return;
@@ -53,7 +53,6 @@ const Register = () => {
 		localStorage.setItem('users', JSON.stringify(updatedUsers));
 		localStorage.setItem('user', JSON.stringify(newUser));
 
-		// ✅ Redirection vers l'étape suivante du formulaire
 		navigate('/auth/register2');
 	};
 

@@ -26,7 +26,7 @@ function Planification() {
 			return;
 		}
 
-		setError(''); // Aucun problème
+		setError(''); 
 
 		const trajet = {
 			depart,
@@ -53,7 +53,7 @@ function Planification() {
 							<input type="time" value={heure} onChange={(e) => setHeure(e.target.value)} />
 							<input type="search" placeholder="Voiture" value={voiture} onChange={(e) => setVoiture(e.target.value)} />
 
-							{/* Message d'erreur s'il y a une erreur */}
+							
 							{error && <p className="error-message">{error}</p>}
 
 							<button className="btn-publier" onClick={handleSubmit}>Publier</button>

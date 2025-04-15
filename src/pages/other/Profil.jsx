@@ -8,12 +8,12 @@ function Profil() {
 	const [car, setCar] = useState(null);
 
 	useEffect(() => {
-		// Récupère l'utilisateur depuis localStorage
+	
 		const storedUser = JSON.parse(localStorage.getItem("user"));
 		if (storedUser) {
 			setUser(storedUser);
 
-			// Simuler un appel pour récupérer la voiture en fonction de l'ID
+			
 			const carsData = [
 				{
 					user_id: 3,
@@ -30,7 +30,7 @@ function Profil() {
 				setCar(userCar);
 			}
 		} else {
-			navigate('/login'); // redirige si non connecté
+			navigate('/login'); 
 		}
 	}, [navigate]);
 

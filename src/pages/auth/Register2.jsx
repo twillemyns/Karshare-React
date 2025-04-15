@@ -39,12 +39,12 @@ const Login = () => {
 			return;
 		}
 
-		// Correspondance avec le JSON (champs en anglais)
+
 		const mappedData = {
 			country: pays,
 			city: ville,
 			address: adresse,
-			phone: `+33${telephone.slice(1)}`, // format international si le téléphone commence par 0
+			phone: `+33${telephone.slice(1)}`, 
 		};
 
 		console.log('Données à envoyer (format JSON) :', mappedData);

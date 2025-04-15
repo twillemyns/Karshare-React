@@ -17,7 +17,7 @@
 	align-items: center;
 	width: 100%;
 	max-width: 1100px;
-	margin-top: 120px; /* pour laisser de la place au titre */
+	margin-top: 120px; 
 }
 
 .form-section {
@@ -55,7 +55,6 @@
 	object-fit: contain;
 }
 
-/* Responsive design pour écrans étroits */
 @media (max-width: 768px) {
 	.register-content {
 		flex-direction: column;

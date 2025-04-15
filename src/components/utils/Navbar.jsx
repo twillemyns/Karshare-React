@@ -7,10 +7,9 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 	const navigate = useNavigate();
 
-	// Récupère l'utilisateur connecté depuis le localStorage
+	
 	const user = JSON.parse(localStorage.getItem('user'));
 
-	// Fonction de déconnexion
 	const handleLogout = () => {
 		localStorage.removeItem('user');
 		navigate('/auth/login');
@@ -44,7 +43,7 @@ const Navbar = () => {
 					/>
 				</div>
 
-				{/* Bouton de déconnexion visible seulement si utilisateur connecté */}
+
 				{user && (
 					<div className="navbar-link">
 						<p onClick={handleLogout}>Déconnexion</p>
